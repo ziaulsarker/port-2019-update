@@ -3,7 +3,7 @@ let mouse = {
   y: undefined,
 };
 
-class Circle {
+ class Circle {
   constructor(x, y, dx, dy, radius, colorArray, context) {
     this.x = x;
     this.y = y;

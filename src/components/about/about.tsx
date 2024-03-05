@@ -1,8 +1,11 @@
 "use client";
+
+import { useEffect } from "react";
 import Image from "next/image";
 
+import liquidFillGauge from "../../utilities/liquidGauge";
+
 import "./about.scss";
-import { useEffect } from "react";
 
 const expertise = {
   web: {
@@ -53,19 +56,19 @@ export default function About() {
       return gauge;
     };
 
-    let html = createGauge("html", 90);
-    let css = createGauge("css", 88);
-    let js = createGauge("js", 82);
-    let python = createGauge("python", 69);
-    let php = createGauge("php", 73);
-    let node = createGauge("node", 70);
-    let scss = createGauge("scss", 80);
-    let react = createGauge("react", 75);
-    let webpack = createGauge("webpack", 75);
-    let seo = createGauge("seo", 80);
-    let wordpress = createGauge("wordpress", 85);
+    const html = createGauge("html", 90);
+    const css = createGauge("css", 88);
+    const js = createGauge("js", 82);
+    const python = createGauge("python", 69);
+    const php = createGauge("php", 73);
+    const node = createGauge("node", 70);
+    const scss = createGauge("scss", 80);
+    const react = createGauge("react", 75);
+    const webpack = createGauge("webpack", 75);
+    const seo = createGauge("seo", 80);
+    const wordpress = createGauge("wordpress", 85);
 
-    let passion = createGauge("passion", 100, {
+    const passion = createGauge("passion", 100, {
       textColor: "#324D5C",
       waveColor: "#fff",
       waveTextColor: "#324D5C",
@@ -80,9 +83,7 @@ export default function About() {
         <div className="about-info-wrapper">
           <div className="about-img">
             <div>
-              {/* <Image
-             
-              ></Image> */}
+              <Image alt="me" width={300} height={300} src="/img/me.jpeg" />
             </div>
           </div>
           <div className="about-copy">
