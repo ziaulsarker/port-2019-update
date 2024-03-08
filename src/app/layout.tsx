@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+// eslint-disable-next-line @next/next/no-document-import-in-page
+
+import "./page.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
